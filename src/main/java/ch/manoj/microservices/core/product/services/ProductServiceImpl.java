@@ -1,10 +1,10 @@
 package ch.manoj.microservices.core.product.services;
 
-import ch.manoj.api.core.product.Product;
-import ch.manoj.api.core.product.ProductService;
-import ch.manoj.api.exceptions.InvalidInputException;
-import ch.manoj.api.exceptions.NotFoundException;
-import ch.manoj.util.http.ServiceUtil;
+import ch.manoj.microservices.api.lib.core.product.Product;
+import ch.manoj.microservices.api.lib.core.product.ProductService;
+import ch.manoj.microservices.api.lib.exceptions.InvalidInputException;
+import ch.manoj.microservices.api.lib.exceptions.NotFoundException;
+import ch.manoj.microservices.util.lib.http.ServiceUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
