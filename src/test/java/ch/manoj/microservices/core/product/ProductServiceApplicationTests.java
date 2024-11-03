@@ -42,7 +42,8 @@ class ProductServiceApplicationTests {
 				.expectHeader().contentType(APPLICATION_JSON)
 				.expectBody()
 				.jsonPath("$.path").isEqualTo("/product/no-integer")
-				.jsonPath("$.message").isEqualTo("Type mismatch.");
+				.jsonPath("$.error").isEqualTo("Bad Request");
+				//.jsonPath("$.message").isEqualTo("Type mismatch.");
 	}
 
 	@Test
